@@ -1,4 +1,4 @@
-#model training 是使用 jester資料5種動作
+#model training 
 
 
 from  pynput import mouse, keyboard
@@ -12,11 +12,11 @@ import time
 from keras.models import Model, load_model
 import switch_1
 #model1_name = ""
-model1_path = "C:\\Users\\wayne\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_LRN_300_6_jester"
+model1_path = "C:\\Users\\Nikith\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_LRN_300_6_jester"
 model1 = load_model(model1_path)
-model2_path = "C:\\Users\\wayne\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_HRN_300_6_jester"
+model2_path = "C:\\Users\\Nikith\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_HRN_300_6_jester"
 model2 = load_model(model2_path)
-#字型
+
 font = cv2.FONT_HERSHEY_SIMPLEX
 quietMode = False
 img_rows,img_cols=125, 57 
@@ -35,7 +35,7 @@ max =1
 real_index = 5
 instruction = 'no Gestrue'
 pre =0
-#load 種類CSV檔
+#load CSV
 class_file = 'class_jester_6_300.csv'
 with open(class_file) as f:
     classes = f.readlines()
@@ -58,7 +58,7 @@ while(1):
         start = time.time()
         framecount = 0
 
-    #(影像, 文字, 座標, 字型, 大小, 顏色, 線條寬度, 線條種類)
+   
     cv2.putText(frame,fps,(10,20), font, 0.7,(0,255,0),2,1)
     X_tr=[]
          
