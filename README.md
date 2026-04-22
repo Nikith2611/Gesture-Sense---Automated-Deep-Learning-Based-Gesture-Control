@@ -1,8 +1,8 @@
-# ✋ Gesture Sense - Automated Gesture Control
+# Gesture Sense - Automated Deep Learning Based Gesture Control
 
 ## 📌 Project Overview
 
-**Gesture Sense - Automated Gesture Control** is a real-time computer vision system that enables users to control their laptop using hand gestures without physical interaction.
+**Gesture Sense - Automated Deep Learning Based Gesture Control** is a real-time computer vision system that enables users to control their laptop using hand gestures without physical interaction.
 
 This project uses a **deep learning-based approach** to recognize gestures from video sequences and map them to system-level actions such as volume control, navigation, and mouse clicks.
 
